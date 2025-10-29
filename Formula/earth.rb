@@ -23,7 +23,7 @@ class Earth < Formula
       -X main.BuiltBy=homebrew-earthbuild
     ]
     tags = "dfrunmount dfrunsecurity dfsecrets dfssh dfrunnetwork dfheredoc forceposix"
-    system "go", "build", "-tags", tags, *std_go_args(ldflags: ldflags, output: bin/"earth"), "./cmd/earth"
+    system "go", "build", "-tags", tags, *std_go_args(ldflags: ldflags, output: bin/"earth"), "./cmd/earthly"
 
     bin.install_symlink "earth" => "earthly"
 
